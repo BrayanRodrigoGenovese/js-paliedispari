@@ -1,4 +1,3 @@
-const userWord = prompt("Inserisci la parola per verificare se è palindroma");
 function isPalindrome(word) {
   reversedUserWord = "";
   for (let i = userWord.length - 1; i >= 0; i--) {
@@ -8,3 +7,7 @@ function isPalindrome(word) {
 }
 
 console.log(isPalindrome(userWord));
+
+const userWord = prompt(
+  "Inserisci una parola o un numero per verificarne la palindromia"
+).trim();
